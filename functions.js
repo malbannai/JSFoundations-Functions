@@ -7,8 +7,13 @@
  * greet("Michael") logs "Hello Michael"
  */
 function greet(name) {
-  // Your code here
+  console.log(`Hello ${name}`);
+  // if (name === "Mshary") console.log(`My first IOD ${name}`);
+  // else if (name === "Lailz") console.log(`My second IOD ${name}`);
+  // else if (name === "Hasan") console.log(`My third IOD ${name}`);
 }
+
+// greet("Lailz");
 
 /**
  * isOdd(n):
@@ -20,8 +25,12 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  // Your code here
+  if (n % 2 === 1) return true;
+  return false;
 }
+
+// let numberTester = isOdd(5);
+// console.log(numberTester);
 
 /**
  * oddsSmallerThan(n):
@@ -33,8 +42,13 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  if (n % 2 === 1) return n / 2 - 0.5;
+  return n / 2;
 }
+
+// Tester call: console.log(15 / 2 - 0.5);
+// let numberTesterRound2 = oddsSmallerThan(8);
+// console.log(numberTesterRound2);
 
 /**
  * squareOrDouble(n):
@@ -47,7 +61,15 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
+  if (n % 2 === 0) {
+    return n * 2;
+  } else {
+    return n * n;
+  }
+  // Math.pow(n, 2)
 }
+
+// let numberTesterRound3 = squareOrDouble(7);
+// console.log(numberTesterRound3);
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
